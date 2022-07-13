@@ -9,9 +9,9 @@ namespace Checkout.Kata.Tests
         }
 
         [Test]
-        public void Test1()
+        public void SingleProductScannedAndReturnsPrice()
         {
-            Assert.Pass();
+            Assert.AreEqual(0, till.Scan("A"));
         }
     }
 }
