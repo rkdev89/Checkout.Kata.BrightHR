@@ -11,7 +11,8 @@ namespace Checkout.Kata.Tests
         [Test]
         public void SingleProductScannedAndReturnsPrice()
         {
-            Assert.AreEqual(0, till.Scan("A"));
+            Till till = new();
+            Assert.That(till.Scan("A"), Is.EqualTo(50m));
         }
     }
 }
